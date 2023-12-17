@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "accented.dtsi"
+#include "deadkey.dtsi"
 
 #include "miryoku.h"
 
