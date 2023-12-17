@@ -1,0 +1,49 @@
+/*
+*
+* Copyright (c) 2022 Rafael Romão
+* SPDX-License-Identifier: MIT
+*
+*/
+
+#define ACCENTED_KEY(NAME, LABEL_U, LABEL_L, LABEL, KEY, DEAD_KEY) \
+  / { \
+        ac_##NAME##_l: ac_##NAME##_l { \
+            wait-ms = <0>; \
+            tap-ms = <0>; \
+            label = LABEL_L; \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>; \
+            bindings \
+                =  <&macro_tap &kp DEAD_KEY> \
+                , <&macro_tap &kp KEY> \
+                ; \
+        }; \
+        ac_##NAME##_u: ac_##NAME##_u { \
+            wait-ms = <0>; \
+            tap-ms = <0>; \
+            label = LABEL_U; \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>; \
+            bindings \
+                = <&macro_tap &kp DEAD_KEY> \
+                , <&macro_press &kp LSHFT> \
+                , <&macro_tap &kp KEY> \
+                , <&macro_release &kp LSHFT> \
+                ; \
+        }; 
+
+    accents {
+        ACCENTED_KEY(agrv, "à", "À", "àÀ", A, GRAVE)
+        ACCENTED_KEY(acir, "â", "Â", "âÂ", A, CARET)
+        ACCENTED_KEY(eacu, "é", "É", "éÉ", E, APOS)
+        ACCENTED_KEY(egrv, "è", "È", "èÈ", E, GRAVE)
+        ACCENTED_KEY(ecir, "ê", "Ê", "êÊ", E, CARET)
+        ACCENTED_KEY(etre, "ë", "Ë", "ëË", E, DQT)
+        ACCENTED_KEY(icir, "î", "Î", "îÎ", I, CARET)
+        ACCENTED_KEY(itre, "ï", "Ï", "ïÏ", I, DQT)
+        ACCENTED_KEY(ocir, "ô", "Ô", "ôÔ", O, CARET)
+        ACCENTED_KEY(ugrv, "ù", "Ù", "ùÙ", U, GRAVE)
+        ACCENTED_KEY(utre, "ü", "Ü", "üÜ", U, DQT)
+        ACCENTED_KEY(ucir, "û", "Û", "ûÛ", U, CARET)  
+    };
+};
