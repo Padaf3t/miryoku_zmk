@@ -288,7 +288,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 //Layer for accented char
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP \
 &ac_icir,          &ac_ucir,          &ac_acir,          &ac_ecir,          U_NU,              U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-RA(&kp COMMA),     &ac_ugrv,          &ac_agrv,          &ac_eacu,          &ac_egrv,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+&kp RA(COMMA),     &ac_ugrv,          &ac_agrv,          &ac_eacu,          &ac_egrv,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &ac_itre,          &ac_utre,          &ac_ocir,          &ac_etre,          U_NU,              U_NA,              &u_to_U_MOUSE,     &u_to_U_SYM,       &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp DEL,           &kp SPACE,         &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
