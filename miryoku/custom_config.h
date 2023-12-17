@@ -8,10 +8,15 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp 
 U_NP,              U_NP,              U_LT(U_FUN, ESC),  U_LT(U_NUM, SPACE), U_LT(U_SYM, TAB),  U_LT(U_MOUSE, RET),U_LT(U_NAV, BSPC),U_LT(U_MEDIA, DEL),U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP \
-U_NU,            U_NU,            U_NU,            U_NU,            U_NU,              U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-U_NU,            U_NU,            U_NU,            U_NU,            U_NU,              U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-U_NU,             U_NU,             U_NU,             U_NU,             U_NU,             U_NA,              &u_to_U_MOUSE,     &u_to_U_SYM,       &kp RALT,          U_NA,              \
-U_NP,              U_NP,              U_NU,            U_NU,            U_NU,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NU,            U_NU,            U_NU,            &kp CARET,         U_NU,              U_NA,              &u_to_U_BASE,      &kp U,       &u_to_U_TAP,    U_BOOT,         \
+&kp A,           &kp DQT,         &kp GRAVE,       U_MT(LSHFT,RA(E)), U_NU,              U_NA,              &kp LSHFT,         &kp E,       &kp I,          &kp O,          \
+U_NU,            U_NU,            &kp RA(COMMA),   U_NU,              U_NU,              U_NA,              &u_to_U_MOUSE,     &u_to_U_SYM, &kp RALT,       U_NA,           \
+U_NP,            U_NP,            &kp DEL,         &kp SPACE,         &kp BSPC,          U_NA,              U_NA,              U_NA,        U_NP,           U_NP
+
+// &ac_icir,          &ac_ucir,          &ac_acir,          &ac_ecir,          U_NU,              U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+// &kp RA(COMMA),     &ac_ugrv,          &ac_agrv,          &ac_eacu,          &ac_egrv,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+// &ac_itre,          &ac_utre,          &ac_ocir,          &ac_etre,          U_NU,              U_NA,              &u_to_U_MOUSE,     &u_to_U_SYM,       &kp RALT,          U_NA,              \
+// U_NP,              U_NP,              &kp DEL,           &kp SPACE,         &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 // #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
 // U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          \
