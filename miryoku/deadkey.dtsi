@@ -15,10 +15,10 @@
         }; 
 
         dead_key{
-          UNDEAD_KEY(TILDE, BR_TILDE, ~)
-          UNDEAD_KEY(CARET, BR_CIRC,  ^)
-          UNDEAD_KEY(GRAVE, BR_GRAVE, `)
-          UNDEAD_KEY(APOS,  BR_APOS,  ')
-          UNDEAD_KEY(DQT,   BR_DQT,   ")
+          UNDEAD_KEY(TILDE, TILDE,     ~)
+          UNDEAD_KEY(CARET, CIRC,      ^)
+          UNDEAD_KEY(GRAVE, GRAVE,     `)
+          UNDEAD_KEY(APOS,  APOS,      ')
+          UNDEAD_KEY(DQT,   LS(APOS),  ")
         };
 };
