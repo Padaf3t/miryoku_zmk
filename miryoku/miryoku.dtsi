@@ -13,9 +13,6 @@
 
 #include <dt-bindings/zmk/mouse.h>
 
-#include "accented.dtsi"
-#include "deadkey.dtsi"
-
 / {
   keymap {
     compatible = "zmk,keymap";
